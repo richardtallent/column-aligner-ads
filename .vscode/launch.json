@@ -1,0 +1,16 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "SqlOps Extension",
+			"type": "sqlopsExtensionHost",
+			"request": "launch",
+			"runtimeExecutable": "azuredatastudio",
+			"args": ["--extensionDevelopmentPath=${workspaceRoot}"],
+			"stopOnEntry": false,
+			"sourceMaps": true,
+			"outFiles": ["${workspaceRoot}/out/**/*.js"],
+			"preLaunchTask": ""
+		}
+	]
+}

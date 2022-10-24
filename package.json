@@ -1,0 +1,70 @@
+{
+	"name": "column-aligner-ads",
+	"displayName": "column-aligner-ads",
+	"description": "Provides a shortcut key to consistently align the selected rows to the nearest tabstop.",
+	"publisher": "RichardTallentVS",
+	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/richardtallent/column-aligner-ads"
+	},
+	"pricing": "Free",
+	"engines": {
+		"vscode": "^1.39.0",
+		"azdata": "*"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:column-aligner-ads.alignColumns"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "column-aligner-ads.alignColumns",
+				"title": "Align Columns"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "column-aligner-ads.alignColumns",
+				"key": "Shift+Alt+\\",
+				"mac": "Shift+Cmd+\\",
+				"when": "editorTextFocus"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"test": "node ./out/test/runTest.js",
+		"proposedapi": "node installTypings.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.72.0",
+		"@types/azdata": "1.39.0",
+		"@types/glob": "^8.0.0",
+		"@types/mocha": "^10.0.0",
+		"@types/node": "^18.11.4",
+		"eslint": "^8.26.0",
+		"@typescript-eslint/parser": "^5.40.1",
+		"@typescript-eslint/eslint-plugin": "^5.40.1",
+		"glob": "^8.0.3",
+		"mocha": "^10.1.0",
+		"typescript": "^4.8.4",
+		"azdata-test": "^1.2.0"
+	},
+	"prettier": {
+		"useTabs": true,
+		"semi": false,
+		"singleQuote": false,
+		"bracketSpacing": true,
+		"trailingComma": "es5",
+		"printWidth": 120
+	}
+}

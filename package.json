@@ -10,7 +10,7 @@
 	},
 	"pricing": "Free",
 	"engines": {
-		"vscode": "^1.39.0",
+		"vscode": "^1.62.0",
 		"azdata": "*"
 	},
 	"categories": [
@@ -46,7 +46,7 @@
 		"proposedapi": "node installTypings.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.72.0",
+		"@types/vscode": "^1.62.0",
 		"@types/azdata": "1.39.0",
 		"@types/glob": "^8.0.0",
 		"@types/mocha": "^10.0.0",

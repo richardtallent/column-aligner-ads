@@ -9,6 +9,7 @@
 		"url": "https://github.com/richardtallent/column-aligner-ads"
 	},
 	"pricing": "Free",
+	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "^1.62.0",
 		"azdata": "*"
